@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<%# this is a "wrapper file" tha wraps all the files%>
+
 <html>
   <head>
     <title>AlphaBlog</title>
@@ -9,6 +12,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <% flash.each do | name, msg | %>
+    <ul>
+      <li><%= msg %></li>
+    </ul>
+    
+    <% end %>
     <%= render 'layouts/navigation'%>
     <%= yield %>
   </body>
