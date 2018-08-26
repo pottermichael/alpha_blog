@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<%# this is a "wrapper file" tha wraps all the files%>
+<%# this is a "wrapper file" tha wraps all the files i.e. pages of the site%>
 
 <html>
   <head>
@@ -14,7 +14,10 @@
   <body>
     <%= render 'layouts/messages' %>
     <%= render 'layouts/navigation'%>
+    <div class= "container">
     <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
 
