@@ -8,7 +8,7 @@ $navbar-default-bg: #0b87ed;
   font-size: 1.7em;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: 10px;
   font-weight: bold;
 }
 
@@ -25,7 +25,6 @@ $navbar-default-bg: #0b87ed;
   background-image: asset-url('Chicago_Skyline.jpg');
   background-size: cover;
   height: 550px;
-  
 }
 
 .jumbotron h1{
