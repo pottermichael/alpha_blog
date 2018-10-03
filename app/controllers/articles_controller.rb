@@ -13,10 +13,11 @@ class ArticlesController < ApplicationController
     
   end
 
+#hard coding user below temporarily. to be revised w/ dynamic user in future
 
   def create
     @article = Article.new(article_params)
-    
+    @article.user = User.first
     if @article.save
       flash[:success] = "Article was successfully created"
       redirect_to article_path(@article)
