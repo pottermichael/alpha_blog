@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
     flash[:danger] = "Article was successfully deleted"
   end
   
-  private 
+private 
   
     def article_params
      params.require(:article).permit(:title, :description)
