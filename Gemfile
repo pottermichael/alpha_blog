@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'table_print'
 
+gem 'rails-controller-testing'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
